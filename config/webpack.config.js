@@ -514,13 +514,12 @@ module.exports = function (webpackEnv) {
                     ? shouldUseSourceMap
                     : isEnvDevelopment,
                 }).concat({
-                  loader: require.resolve('sass-loader'),
+                  loader: require.resolve("sass-loader"),
                   options: {
                     sassOptions: {
                       includePaths: [paths.appSrc + './styles']
                     },
-                    sourceMap: isEnvProduction && shouldUseSourceMap,
-                    prependData: `@import 'utils';`
+                    additionalData: "@import 'utils';",
                   }
                 }),                
               // Don't consider CSS imports dead code even if the
