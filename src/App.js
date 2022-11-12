@@ -69,14 +69,30 @@
 // export default App;
 
 // CSSModule 렌더링
+// import React, {Component} from 'react';
+// import CSSModule from './CSSModule';
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <>
+//         <CSSModule />
+//       </>
+//     );
+//   }
+// }
+
+// export default App;
+
+// StyledComponent 렌더링
 import React, {Component} from 'react';
-import CSSModule from './CSSModule';
+import StyledComponent from './StyledComponent';
 
 class App extends Component {
   render() {
     return (
       <>
-        <CSSModule />
+        <StyledComponent />
       </>
     );
   }
