@@ -72,3 +72,23 @@ const StyledComponent = () => (
 );
 
 export default StyledComponent;
+
+// 스타일링된 엘리먼트 만들기
+// 예시 코드(styled.태그명)
+// 컴포넌트 파일 상단에서
+// import styled from 'styled-components';
+
+// const MyComponent = styled.div`
+//     font-size: 2rem;
+// `;
+
+// 사용할 태그명이 유동적이거나 특정 컴포넌트 자체에 스타일링 해주고 싶을 때?
+// 예시 코드
+// // 태그의 타입을 styled 함수의 인자로 전달
+// const MyInput = styled('input')`
+//     background: gray;
+// `
+// // 아예 컴포넌트 형식의 값을 넣어 줌
+// const StyledLink = styled(Link)`
+//     color: blue;
+// `
