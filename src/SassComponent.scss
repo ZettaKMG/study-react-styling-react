@@ -1,7 +1,11 @@
 // utils.scss에서 선언한 변수와 믹스인 가져와 사용하기
-@import './styles/utils';
+// @import './styles/utils';
 .SassComponent {
     display: flex;
+    background: $oc-gray-2;
+    @include media('<768px') {
+        background: $oc-gray-9;
+    }
     .box { // 일반 CSS에서는 .SassComponent .box와 마찬가지
         background: red;
         cursor: pointer;
